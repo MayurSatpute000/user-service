@@ -82,5 +82,13 @@ public class UserController {
 		return userService.deleteUserByCity(city);
 	}
 	
+	@DeleteMapping("/{id}")
+	public ResponseEntity<String> deleteUserByEmail(@PathVariable int id) {
+		
+		//return userService.deleteUser(id);
+		return null;
+		
+	}
+	
 }
 	
